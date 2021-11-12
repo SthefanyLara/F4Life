@@ -7,7 +7,6 @@ Moradias universitárias
   <li>HTML5 
   <li>CSS e Styled Components 
   <li>@media screen
-
 </ul>
 
 Desktop:
