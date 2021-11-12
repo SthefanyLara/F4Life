@@ -1,0 +1,591 @@
+/* ESTILO GERAL */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 1280px;
+    height: 100vh;
+}
+
+/* ESTILOS DO HEADER */
+
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+
+
+
+header {
+    display: flex;
+    background-color:  #a1a1a1;
+    box-shadow: 2px 2px darkgrey;
+    color:white;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height:50px;
+}
+
+
+@media screen and (min-device-width: 320px) and (max-device-width : 480px) {
+    header{
+        width: 100vw;
+    }
+
+    header p{
+        text-align: center;
+        margin: 0px 3px;
+        font-size: 14px;
+        color:white;
+        margin-right: 10px;
+    }
+    
+    header img {
+        margin-left: 10px;
+    }
+}
+
+.logo {
+    height: 35px;
+    width: 35px;
+}
+
+.nav:hover {
+    color: rgb(0, 68, 255);
+}
+
+.nav:active {
+    color: rgb(76, 0, 255);
+}
+
+/* ESTILOS DA SESSAO 1 */
+
+
+
+
+#sessao-1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 500px;
+    width: 1280px;
+    position:relative;
+    left:0px; 
+    top:1px;
+    box-shadow: 1px 1px darkgrey;
+    /* background-color: green; */
+}
+
+#search-button{
+    position:absolute; 
+    left:585px; 
+    top:350px;
+    
+}
+
+#search-button input{
+    width: 250px;
+    height: 30px;
+    border-radius: 2px;
+    font-size: 16px;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: solid gray 1px;
+}
+
+#search-button input:active{
+    background-color:  #a1a1a1;
+    text-decoration: none;
+    color: white;
+}
+
+
+#search-button button{
+    width: 55px;
+    height: 32px;
+    border-radius: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border:1px solid grey;
+    cursor:pointer;
+    background-color:  #a1a1a1;
+    color: white;
+}
+
+#search-button button:active{
+    background-color:whitesmoke;
+    color: black
+
+}
+
+
+#img-1-sessao-1{
+    width: 900px;
+    height: 500px;
+    opacity: 80%;
+}
+
+#img-2-sessao-1{
+    width: 380px;
+    height: 500px;
+}
+
+#frase-efeito{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    position: absolute;
+    left:140px; 
+    top:100px;
+}
+
+#img-3-sessao-1{
+    position: absolute;
+    left:420px; 
+    top:140px;
+    height: 200px;
+    width: 200px;
+}
+
+
+/* RESPONSIVIDADE SESSÃO 1 */
+
+
+
+@media screen and (min-device-width: 320px) and (max-device-width : 480px) {
+    #sessao-1{
+        width: 375px;
+        display: block;
+        background-color: green;
+        
+    }
+
+    #img-1-sessao-1{
+        display: none;
+    }
+
+    #img-2-sessao-1{
+        width: 375px;
+    }
+
+    #frase-efeito{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+        position: absolute;
+        left:20px; 
+        top:230px;
+        color: white;
+    }
+
+    #search-button{
+        position:absolute; 
+        left:50px; 
+        top:350px;
+    }
+
+    #img-3-sessao-1{
+        display: none;
+    }
+}
+
+
+/* ESTILOS SESSAO 2 */
+
+
+
+
+#sessao-2 {
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    height: 400px;
+    width: 1280px;
+    font-size: 25px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px darkgrey;
+}
+
+#sessao-2 img {
+    height: 25vh;
+    object-fit: fill;
+}
+
+#conj1 {
+    margin-top: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#conj2 {
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#conj3 {
+    margin-top: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#conj4 {
+    margin-top: 100px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#img-2-sessao-2 {
+    margin-top: 100px;
+    margin-left: -15px;
+}
+
+#img-4-sessao-2 {
+    margin-top: 250px;
+    margin-left: -15px;
+}
+
+#img-6-sessao-2 {
+    margin-top: 100px;
+    margin-left: -15px;
+}
+
+
+  /* RESPONSIVIDADE SESSÃO 2 */
+
+@media screen and (min-device-width: 320px) and (max-device-width : 480px) {
+    #sessao-2 {
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        width: 375px;
+        font-size: 22px;
+    }
+
+    #sessao-2 img {
+        height: 15vh;
+    }
+
+    #img-2-sessao-2 {
+        display: none;
+    }
+    
+    #img-4-sessao-2 {
+        display: none;
+    }
+    
+    #img-6-sessao-2 {
+        display: none;
+    }
+
+    #conj1 {
+        margin-top: 0px;
+    }
+
+    #conj2 {
+        margin-top: 40px;
+    }
+
+    #conj3 {
+        margin-top: 40px;
+    }
+
+    #conj4 {
+        margin-top: 40px;
+        margin-right: 0px;
+    }
+
+}
+
+
+
+/* ESTILOS SESSAO 3 */
+
+
+
+
+
+#sessao-3{
+    background-color: #a1a1a1;
+    height: 500px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 1px 1px darkgrey;
+}
+
+#sessao-3 h2{
+    font-size: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    font-size: 18px;
+}
+
+form input{
+    margin: 8px 0;
+    padding: 2px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 2px;
+    height: 20px;
+    font-style: italic;
+    border: solid gray 0px;
+    padding-left:8px;
+}
+
+form textarea{
+    margin: 8px 0;
+    padding: 2px 0;
+    height: 40px;
+    border-radius: 2px;
+    font-style: italic;
+    border: solid gray 1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode'
+    Geneva, Verdana, sans-serif;
+    padding-left:8px;
+}
+
+form button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px 0;
+    border-radius: 2px;
+    border: solid gray 1px;
+}
+
+
+@media screen and (min-device-width: 320px) and (max-device-width : 480px) {
+    #sessao-3{
+        height: 600px;
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #sessao-3 h2{
+        font-size: 28px;
+        width: 280px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+/* ESTILO DA SESSAO 4 */
+
+
+
+
+#sessao-4{
+    height: 500px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 1px 1px darkgrey;
+}
+
+#sessao-4 img{
+    width: 100vw;
+    height: 500px;
+    position: relative;
+    top: 1px;
+    left: 1px;
+    opacity: 50%;
+}
+
+#sessao-4 h2{
+    font-size: 38px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 1470px;
+    left: 40vw;
+}
+
+#sessao-4-texto-principal{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 1580px;
+    left: 10vw;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#sessao-4-texto-principal-1{
+    width: 500px;
+}
+
+#sessao-4-texto-principal-2{
+    width: 500px;
+    margin-top: 150px;
+    margin-left: 20px;
+}
+
+
+
+/* RESPONSIVIDADE SESSAO 4 */
+
+
+@media screen and (min-device-width: 320px) and (max-device-width : 480px) {
+    #sessao-4{
+        height: 430px;
+        width: 375px;
+        text-align: center;
+        display: flex;
+        position: static;
+        flex-direction: column;
+        background-color: rgb(3, 3, 49);
+        color: white;
+    }
+
+    #sessao-4-texto-principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        width: 300px;
+        position: static;
+        margin-top: 30px;
+        margin-left: 35px;
+        font-weight: unset;
+    }
+
+    #sessao-4 img{
+        display: none;
+    }
+
+    #sessao-4 h2{
+        font-size: 30px;
+        padding-top: 50px;
+        position: static;
+    }
+
+    #sessao-4-texto-principal-1{
+        width: 300px;
+        margin-bottom: 30px;
+    }
+
+    #sessao-4-texto-principal-2{
+        width: 300px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+}
+
+
+/* ESTILOS DA SESSÃO 5 */
+
+
+#sessao-5 {
+    background-color: #ededed;
+    height: 200px;
+    width: 1280px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 1px 1px darkgrey;
+}
+
+
+
+.contatacao {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-top: 30px;
+
+
+}
+
+.contatacao span{
+    width: 400px;
+}
+
+.endereco {
+    display: flex;
+
+}
+
+
+.contatos {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width : 480px) {
+    #sessao-5 {
+        width: 375px;
+        height: 300px; 
+    }
+    
+    .contatacao span{
+        width: 250px;
+        padding-top: 20px;
+    }
+
+    .contatacao{
+        display: grid;
+        grid: 1fr 1fr;
+        padding-top: 20px;
+    }
+    
+}
+
+
+/* ESTILO DO FOOTER */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px grey;
+    text-align: center;
+    background-color: gray;
+    height: 70px;
+}
+
+.icone {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+#icone-logo{
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    text-align: left;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width : 480px) {
+
+    footer {
+        height: 50px;
+        width: 375px;
+        background-color: gray;
+    }
+
+    footer img {
+        width: 15px;
+        height: 15px;
+    }
+    
+}
